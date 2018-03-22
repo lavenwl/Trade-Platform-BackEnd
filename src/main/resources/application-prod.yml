@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${laven.database.writerendpoint}:${laven.database.port}/${laven.database.name}
+    username: slsys
+    password: AXYm8LcY8b
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  server:
+      port: 8082
+laven:
+  database:
+    writerendpoint: 127.0.0.1
+    port: 3306
+    name: slsys
+

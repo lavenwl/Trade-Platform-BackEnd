@@ -18,9 +18,8 @@ import java.util.Collection;
  * @Date: 2017/7/1 下午11:48
  */
 @RestController
-@RequestMapping("/order")
-public class OrderController {
-
+@RequestMapping("/saleOrder")
+public class SaleOrderController {
     @Autowired
     private OrderService service;
 

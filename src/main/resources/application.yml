@@ -1,0 +1,21 @@
+spring:
+  server:
+    port:8082
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${laven.database.writerendpoint}:${laven.database.port}/${laven.database.name}
+    username: root
+    password: password
+
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+laven:
+  database:
+    writerendpoint: 127.0.0.1
+    port: 3306
+    name: springboottest
+
