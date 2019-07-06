@@ -9,6 +9,9 @@ public enum ResultEnum {
     SUCCESS(0, "成功"),
     UNKOWN_ERROR(-1, "未知错误"),
     LOW_STOCKS(1, "库存不足"),
+    UNKOWN_ACCOUNT(2, "没有此用户"),
+    INCORRECT_PASSWORD(3, "密码不正确"),
+    ACCOUNT_LOCKED(4, "用户被锁定"),
 
     ;
 

@@ -6,11 +6,9 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.validator.constraints.NotBlank;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Description:
@@ -27,7 +25,16 @@ public class Role {
     @NotBlank(message = "角色名称为必填项")
     private String name;
     private String note;
-    private boolean enable = true;
+    private boolean enable = Boolean.TRUE;
+    //角色 -- 权限关系：多对多关系;
+    @ManyToMany(fetch=FetchType.EAGER)
+    @JoinTable(name="t_role_permission",joinColumns={@JoinColumn(name="roleId")},inverseJoinColumns={@JoinColumn(name="permissionId")})
+    private List<Permission> permissionList;
+
+    // 用户 - 角色关系定义;
+    @ManyToMany
+    @JoinTable(name="t_user_role",joinColumns={@JoinColumn(name="roleId")},inverseJoinColumns={@JoinColumn(name="userId")})
+    private List<User> userList;// 一个角色对应多个用户
     @UpdateTimestamp
     private Date updateTime;
     @CreationTimestamp
@@ -87,5 +94,21 @@ public class Role {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public List<Permission> getPermissionList() {
+        return permissionList;
+    }
+
+    public void setPermissionList(List<Permission> permissionList) {
+        this.permissionList = permissionList;
+    }
+
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
     }
 }

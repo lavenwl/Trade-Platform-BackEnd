@@ -51,7 +51,7 @@ public class OrderService {
     }
 
     /**
-     * 修改订单(type=1:采购订单; type=0:销售订单)
+     * 修改订单
      * @param entity
      * @return
      * @throws Exception
@@ -62,12 +62,14 @@ public class OrderService {
         Iterator<Item> it = entity.getItemList().iterator();
         while(it.hasNext()) {
             Item item = it.next();
-            Item oldItem = itemService.getById(item.getId());
-            double diffQauntity = item.getQuantity() - oldItem.getQuantity();
-            if (isPurchaseOrder(entity)) {
-                stockService.increase(item.getProductId(), diffQauntity);
-            } else if (isSaleOrder(entity)) {
-                stockService.reduce(item.getProductId(), diffQauntity);
+            if (item.getId() != 0) {
+                Item oldItem = itemService.getById(item.getId());
+                double diffQauntity = item.getQuantity() - oldItem.getQuantity();
+                if (isPurchaseOrder(entity)) {
+                    stockService.increase(item.getProductId(), diffQauntity);
+                } else if (isSaleOrder(entity)) {
+                    stockService.reduce(item.getProductId(), diffQauntity);
+                }
             }
         }
         return repository.save(entity);

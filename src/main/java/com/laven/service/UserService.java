@@ -40,4 +40,9 @@ public class UserService {
         User e = entity;
         return repository.save(entity);
     }
+
+    public User findByName(String name) {
+        System.out.println("userService: findUserByName: + name:" + name);
+        return repository.findByName(name);
+    }
 }

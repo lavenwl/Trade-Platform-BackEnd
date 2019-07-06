@@ -7,6 +7,9 @@ spring:
       hibernate:
         ddl-auto: update
       show-sql: true
+  devtools:
+    restart:
+      additional-paths: src/main/java
 laven:
   database:
     writerendpoint: 127.0.0.1

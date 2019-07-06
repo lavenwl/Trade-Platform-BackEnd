@@ -8,6 +8,7 @@ import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  *@Description: 
@@ -25,12 +26,17 @@ public class User {
     private Integer id;
     @NotBlank(message = "用户名称为必填项")
     private String name;
+    private String nickName;
     @NotBlank(message = "密码为必填项")
     private String password;
+    private String salt;
     private String phone;
-    @ManyToOne()
-    @JoinColumn(name = "roleId")
-    private Role role;
+//    @ManyToOne()
+//    @JoinColumn(name = "roleId")
+//    private Role role;
+    @ManyToMany(fetch=FetchType.EAGER)//立即从数据库中进行加载数据;
+    @JoinTable(name = "t_user_role", joinColumns = { @JoinColumn(name = "userId") }, inverseJoinColumns ={@JoinColumn(name = "roleId") })
+    private List<Role> roleList;// 一个用户具有多个角色
     @ManyToOne()
     @JoinColumn(name = "companyId")
     private Company company;
@@ -40,17 +46,22 @@ public class User {
     private Date updateTime;
     @CreationTimestamp
     private Date createTime;
+    private byte state;
 
     public User() {
     }
 
-    public User(String name, String password, String phone, Role role, Company company, String note, boolean enable) {
+
+    public User(String name, String nickName, String password, String salt, String phone, List<Role> roleList, Company company, String note, byte state) {
         this.name = name;
+        this.nickName = nickName;
         this.password = password;
+        this.salt = salt;
         this.phone = phone;
-        this.role = role;
+        this.roleList = roleList;
         this.company = company;
         this.note = note;
+        this.state = state;
     }
 
     public Integer getId() {
@@ -85,12 +96,36 @@ public class User {
         this.phone = phone;
     }
 
-    public Role getRole() {
-        return role;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+
+    public byte getState() {
+        return state;
+    }
+
+    public void setState(byte state) {
+        this.state = state;
     }
 
     public Company getCompany() {
@@ -131,5 +166,13 @@ public class User {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    /**
+     * 密码盐.
+     * @return
+     */
+    public String getCredentialsSalt(){
+        return this.name+this.salt;
     }
 }

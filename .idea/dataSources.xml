@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="springboot" uuid="8bf1ca07-5921-4700-99b3-fe78e80bfd9f">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/springboot</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - springboottest@localhost" uuid="e1a128e9-ce9c-4cce-ab00-90669a60c1ef">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/springboottest</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

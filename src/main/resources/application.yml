@@ -1,6 +1,4 @@
 spring:
-  server:
-    port:8082
   profiles:
     active: dev
   datasource:
