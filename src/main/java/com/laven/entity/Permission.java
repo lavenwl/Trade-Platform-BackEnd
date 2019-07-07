@@ -1,5 +1,6 @@
 package com.laven.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -34,8 +35,9 @@ public class Permission {
     @CreationTimestamp
     private Date createTime;
 
-    @ManyToMany
-    @JoinTable(name="t_role_permission",joinColumns={@JoinColumn(name="permissionId")},inverseJoinColumns={@JoinColumn(name="roleId")})
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "permissionList")
+//    @JoinTable(name="t_role_permission",joinColumns={@JoinColumn(name="permissionId")},inverseJoinColumns={@JoinColumn(name="roleId")})
     private List<Role> roleList;
 
     public Permission() {

@@ -1,6 +1,7 @@
 package com.laven.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -32,8 +33,9 @@ public class Role {
     private List<Permission> permissionList;
 
     // 用户 - 角色关系定义;
-    @ManyToMany
-    @JoinTable(name="t_user_role",joinColumns={@JoinColumn(name="roleId")},inverseJoinColumns={@JoinColumn(name="userId")})
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "roleList")
+//    @JoinTable(name="t_user_role",joinColumns={@JoinColumn(name="roleId")},inverseJoinColumns={@JoinColumn(name="userId")})
     private List<User> userList;// 一个角色对应多个用户
     @UpdateTimestamp
     private Date updateTime;
