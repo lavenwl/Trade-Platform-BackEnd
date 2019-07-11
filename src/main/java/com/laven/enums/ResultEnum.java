@@ -12,8 +12,8 @@ public enum ResultEnum {
     UNKOWN_ACCOUNT(2, "没有此用户"),
     INCORRECT_PASSWORD(3, "密码不正确"),
     ACCOUNT_LOCKED(4, "用户被锁定"),
-
-    ;
+    LOGIN_OVERTIME(5, "用户上次登陆后未正常退出, 请重新登录"),
+    UNLOGIN(6, "用户未登录");
 
     private Integer code;
     private String msg;

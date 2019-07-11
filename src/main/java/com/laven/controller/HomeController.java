@@ -10,10 +10,7 @@ import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedHashMap;
 
@@ -47,7 +44,21 @@ public class HomeController {
             } catch ( AuthenticationException ae ) {
                 return ResultUtil.error(ResultEnum.UNKOWN_ERROR);
             }
+        } else {
+            user.logout();
+            return ResultUtil.error(ResultEnum.LOGIN_OVERTIME);
         }
-        return ResultUtil.error(ResultEnum.UNKOWN_ERROR);
+
+    }
+
+    @GetMapping(value="/logout")
+    public Result<User> logout() {
+        Subject user = SecurityUtils.getSubject();
+        if (user.isAuthenticated()) {
+            user.logout();
+            return ResultUtil.success();
+        } else {
+            return ResultUtil.error(ResultEnum.UNLOGIN);
+        }
     }
 }
