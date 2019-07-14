@@ -21,16 +21,18 @@ public class Order {
     @Id
     @GeneratedValue
     private int id;
+    @Column(name = "order_id")
+    private String orderId;
     // 1:采购 0: 销售
     @NotNull(message = "订单类型为必填项")
     private int type;
     @ManyToOne()
     @JoinColumn(name = "purchaseId")
-    @NotNull(message = "销售公司为必选项")
+//    @NotNull(message = "销售公司为必选项")
     private Company purchaseCompany;
     @ManyToOne()
     @JoinColumn(name = "saleId")
-    @NotNull(message = "采购公司为必选项")
+//    @NotNull(message = "采购公司为必选项")
     private Company saleCompany;
     private double money;
     private String description;
@@ -45,8 +47,9 @@ public class Order {
 
     public Order(){}
 
-    public Order(int id, int type, Company purchaseCompany, Company saleCompany, double money, Set<Item> itemList, String description) {
+    public Order(int id, String orderId, int type, Company purchaseCompany, Company saleCompany, double money, Set<Item> itemList, String description) {
         this.id = id;
+        this.orderId = orderId;
         this.type = type;
         this.purchaseCompany = purchaseCompany;
         this.saleCompany = saleCompany;
@@ -61,6 +64,14 @@ public class Order {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
     public int getType() {
