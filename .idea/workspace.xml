@@ -6,12 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2a54c24-bb58-4c47-971b-b01f8b4aae71" name="Default" comment="修改公司数据保存不完整的问题">
+    <list default="true" id="e2a54c24-bb58-4c47-971b-b01f8b4aae71" name="Default" comment="调整不同环境启动的端口配置信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laven/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laven/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laven/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laven/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laven/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laven/entity/Order.class" afterDir="false" />
     </list>
     <ignored path="springBoot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,23 +38,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - springboottest@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - springboottest@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - springboottest@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="springboottest: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -69,6 +50,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroRealm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -80,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="92">
+              <caret line="64" column="14" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -96,21 +86,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://e1a128e9-ce9c-4cce-ab00-90669a60c1ef/schema/springboottest/table/t_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="" />
-              </filtering>
-              <column-attributes>
-                <column name="create_time" position="8" />
-                <column name="enable" position="2" />
-                <column name="name" position="3" />
-                <column name="note" position="4" />
-                <column name="password" position="5" />
-                <column name="phone" position="6" />
-                <column name="update_time" position="7" />
-              </column-attributes>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -118,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="175">
               <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,6 +127,62 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/PurchaseOrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/entity/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/classes/com/laven/entity/Order.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#3755#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -166,9 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/laven/dao/impl/MysqlOrderDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laven/dao/impl/OrderDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laven/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/controller/OrderController1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/service/TypeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/service/CompanyService.java" />
@@ -194,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laven/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laven/entity/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/service/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/dao/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/service/UserService.java" />
@@ -202,13 +233,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laven/utils/ResultUtil.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8bf1ca07-5921-4700-99b3-fe78e80bfd9f/console.sql" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.10.11.RELEASE/spring-data-jpa-1.10.11.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laven/service/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laven/controller/ProductControllerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-prod.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/entity/Permission.java" />
@@ -217,6 +245,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laven/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-prod.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e1a128e9-ce9c-4cce-ab00-90669a60c1ef/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e1a128e9-ce9c-4cce-ab00-90669a60c1ef/console_2.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laven/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -229,7 +264,22 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springBoot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springBoot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springBoot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -260,37 +310,25 @@
             <path>
               <item name="Trade-Platform-BackEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trade-Platform-BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Trade-Platform-BackEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trade-Platform-BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Trade-Platform-BackEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trade-Platform-BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="springBoot_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Trade-Platform-BackEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trade-Platform-BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="laven" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trade-Platform-BackEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trade-Platform-BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="laven" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,7 +356,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -700,7 +738,7 @@
       <workItem from="1562169002278" duration="1432000" />
       <workItem from="1562383434191" duration="3332000" />
       <workItem from="1562403304290" duration="10025000" />
-      <workItem from="1562550083143" duration="6887000" />
+      <workItem from="1562550083143" duration="20901000" />
     </task>
     <task id="LOCAL-00001" summary="完成基本的&#10;&#10;产品管理&#10;订单管理&#10;公司管理&#10;类型管理&#10;价格管理&#10;库存管理&#10;&#10;功能">
       <created>1521704458422</created>
@@ -716,7 +754,28 @@
       <option name="project" value="LOCAL" />
       <updated>1562455224038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. 添加登出功能&#10;2. 修改权限不适用密文验证&#10;3. 添加几种新的异常返回类型">
+      <created>1562846936225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562846936226</updated>
+    </task>
+    <task id="LOCAL-00004" summary="调整不同环境启动的端口配置信息">
+      <created>1562902644813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562902644813</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加订单ID">
+      <created>1563077242220</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563077242220</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -746,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186856000" />
+    <option name="totallyTimeSpent" value="200870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="0" />
@@ -759,6 +818,7 @@
       <window_info id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" weight="0.328594" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.314376" />
@@ -767,24 +827,24 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.328594" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.4549763" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32469305" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3272933" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32616082" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.69309175" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.35703" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.14323749" />
       <window_info anchor="right" id="Designer" order="5" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.4966216" visible="true" weight="0.17447495" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.4966216" weight="0.17447495" />
       <window_info anchor="right" id="Bean Validation" order="7" weight="0.32884777" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="Maven" order="9" weight="0.14774115" />
+      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.14701131" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5033784" side_tool="true" weight="0.2032967" />
     </layout>
@@ -843,7 +903,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成基本的&#10;&#10;产品管理&#10;订单管理&#10;公司管理&#10;类型管理&#10;价格管理&#10;库存管理&#10;&#10;功能" />
     <MESSAGE value="修改公司数据保存不完整的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改公司数据保存不完整的问题" />
+    <MESSAGE value="1. 添加登出功能&#10;2. 修改权限不适用密文验证&#10;3. 添加几种新的异常返回类型" />
+    <MESSAGE value="调整不同环境启动的端口配置信息" />
+    <MESSAGE value="添加订单ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加订单ID" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,54 +946,6 @@
     <SUITE FILE_PATH="coverage/Trade_Platform_BackEnd$Main.ic" NAME="Main Coverage Results" MODIFIED="1562457676781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.7.RELEASE/spring-boot-autoconfigure-1.4.7.RELEASE.jar!/org/springframework/boot/autoconfigure/web/HttpEncodingProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.7.RELEASE/spring-boot-autoconfigure-1.4.7.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-958">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.10.11.RELEASE/spring-data-jpa-1.10.11.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/121a1e81/1f837226-11ed-473b-b88d-94c75305e258/springboottest.t_user" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/TypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="imports" />
-            <element signature="e#689#690#0" />
-            <element signature="e#749#750#0" />
-            <element signature="e#844#845#0" />
-            <element signature="e#906#907#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.7.RELEASE/spring-boot-autoconfigure-1.4.7.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/aop/AopAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#2364#0" />
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.7.RELEASE/spring-boot-autoconfigure-1.4.7.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/HttpEncodingProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -949,13 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="120" column="43" selection-start-line="120" selection-start-column="43" selection-end-line="120" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -980,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/dao/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -999,13 +1000,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1f837226-11ed-473b-b88d-94c75305e258/console_1.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="das://e1a128e9-ce9c-4cce-ab00-90669a60c1ef/schema/springboottest/table/t_user.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -1061,13 +1055,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/handler/ExceptionHandle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1093,24 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/utils/ResultUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1221,10 +1194,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#749#750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/enums/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="92">
+          <caret line="64" column="14" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1246,37 +1267,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#749#750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/shiro/ShiroRealm.java">
+    <entry file="das://e1a128e9-ce9c-4cce-ab00-90669a60c1ef/schema/springboottest/table/t_order.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e1a128e9-ce9c-4cce-ab00-90669a60c1ef/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e1a128e9-ce9c-4cce-ab00-90669a60c1ef/schema/springboottest/table/t_order">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e1a128e9-ce9c-4cce-ab00-90669a60c1ef/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/PurchaseOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laven/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/laven/entity/Order.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#3755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1298,7 +1359,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (tradePlatform)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
